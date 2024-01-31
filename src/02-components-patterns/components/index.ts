@@ -1,4 +1,5 @@
 import { ProductImage } from '.'
+import { ProductCardHOC } from '../interfaces/interfaces'
 import { ProductButtons } from './ProductButtons'
 import { ProductCard as productCardHOC } from './ProductCard'
 import { ProductTitle } from './ProductTitle'
@@ -8,7 +9,7 @@ export { ProductContext } from './ProductCard'
 export * from './ProductImage'
 export * from './ProductTitle'
 
-export const ProductCard = Object.assign(productCardHOC, {
+export const ProductCard: ProductCardHOC = Object.assign(productCardHOC, {
     Title: ProductTitle,
     Image: ProductImage,
     Buttons: ProductButtons,
