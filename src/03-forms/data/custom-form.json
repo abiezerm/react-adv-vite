@@ -1,0 +1,69 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "placeholder": "First Name",
+        "label": "First Name",
+        "value": "John",
+        "validations": [
+            {
+                "type": "required",
+                "message": "First Name is required"
+            },
+            {
+                "type": "minLength",
+                "value": 3,
+                "message": "First Name must be at least 3 characters"
+            },
+            {
+                "type": "maxLength",
+                "value": 10,
+                "message": "First Name must be at most 10 characters"
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "placeholder": "Last Name",
+        "label": "Last Name",
+        "value": "Doe",
+        "validations": [
+            {
+                "type": "required",
+                "message": "First Name is required"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Email",
+        "label": "Email",
+        "value": "test@gmail.com"
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "test@gmail.com",
+        "options": [
+            {
+                "id": 1, 
+                "label": "Mario"
+            }, 
+            {
+                "id": 2, 
+                "label": "Metal Gear"
+            }, 
+            {
+                "id": 3, 
+                "label": "Final Fantasy"
+            }, 
+            {
+                "id": 4, 
+                "label": "Zelda"
+            } 
+        ]
+    }
+]
